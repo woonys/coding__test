@@ -25,9 +25,20 @@ def prime_list(x):
 
 
 for i in li:
+    print(i)
     ans_list = []
     for j in prime_list(i):
+        print(prime_list(i))
         if (i - j) in prime_list(i):
-            ans_list.append([i-j, j].sort())
-    list(set(ans_list))
-    print(ans_list.)
+            t = [j, i - j]
+            t.sort()
+            if t in ans_list:
+                continue
+            else:
+                ans_list.append(t)
+
+            if len(ans_list) > 1:
+                temp = []
+                for i in ans_list:
+                    temp.append(abs(i[0] - i[1]))
+                #print(ans_list[temp.index(min(temp))])
