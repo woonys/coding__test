@@ -5,7 +5,7 @@ for i in range(9):
     dwarf = int(stdin.readline())
     dwarfs.append(dwarf)
 
-com = list(combinations(dwarfs, 7))
+com = combinations(dwarfs, 7)
 
 for i in com:
     if sum(i) == 100:
