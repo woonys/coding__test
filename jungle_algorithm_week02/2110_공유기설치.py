@@ -36,6 +36,12 @@
 #
 # binary_search_idx(homes, 0, n-1, c-2, c_list) # start, end에는 인덱스 값이 들어가야 하니 end에 n-1
 
+
+
+
+
+
+
 # 풀이 2: mid 간격만큼 공유기 배치 후 내가 배치한 공유기 수(count)보다 c 값이 크냐 작냐로 이진 탐색 실시
 
 # from sys import stdin
