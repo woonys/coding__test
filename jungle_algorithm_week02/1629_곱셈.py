@@ -9,6 +9,6 @@ def mod(n, k):
         if k % 2 == 0:
             return (tmp * tmp) % c
         else:
-            return (tmp * tmp * a) % c
+            return (tmp * tmp * n) % c
 
 print(mod(a, b))
