@@ -1,5 +1,5 @@
 from sys import stdin
-
+""" 1번 풀이"""
 input = stdin.readline
 
 N, K = map(int, input().split())
@@ -13,9 +13,28 @@ for i in range(N):
 coins.reverse()
 ans = K
 cnt = 0
+
 for i in coins:
-    while  ans - i >=0:
-        ans -= i
-        cnt +=1
+    if ans > i:
+        mod = ans // i
+        ans %= i
+        cnt += mod
+        if ans == 0:
+            break
 
 print(cnt)
+
+
+
+"""2번 풀이: dp는 여기서는 좋은 풀이가 아님! K 값이 최대 10억이라 리스트가 10억까지 만들어짐.."""
+
+# dp = [1000000] * (K+1)
+
+# dp[0] = 0
+
+# for i in range(1, K+1):
+#     for c in coins:
+#         if i >= c:
+#             dp[i] = min(dp[i-c]+1, dp[i])
+
+# print(dp[K])
