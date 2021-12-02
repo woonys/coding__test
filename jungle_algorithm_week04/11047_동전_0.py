@@ -10,12 +10,12 @@ for i in range(N):
     if  a<=K:
         coins.append(a)
 
-coins.reverse()
+coins.reverse() # 얘는 문제 없음!
 ans = K
 cnt = 0
 
 for i in coins:
-    if ans > i:
+    if ans >= i: # "=" 이거 하나 안 써서 계속 오답... 
         mod = ans // i
         ans %= i
         cnt += mod
