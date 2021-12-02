@@ -5,6 +5,7 @@ N = int(stdin.readline())
 A = list(map(int, input().split()))
 
 D = [1] * (N)
+
 for i in range(N):
     for j in range(i):
         if A[j] < A[i]:
