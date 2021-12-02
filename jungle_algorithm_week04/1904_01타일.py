@@ -12,7 +12,6 @@ setrecursionlimit(10**9)
 
 
 n = int(stdin.readline())
-# print(num(a))
 
 if n == 1:
     print(1)
