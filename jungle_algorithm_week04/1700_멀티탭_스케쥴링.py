@@ -70,7 +70,6 @@ li = list(map(int, input().split()))
 res = swap = num = max_I = 0
 
 for i in li:
-    
     # 이미 i가 멀티탭에 끼워져 있다면
     if i in multap:
         pass
