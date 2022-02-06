@@ -5,3 +5,5 @@ class Solution:
         
         s = "".join(s)
         return s
+
+Solution()
