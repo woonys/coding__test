@@ -16,6 +16,7 @@ def solution(rounds):
                 answer += 1
             elif (base[i], round[i]) == (round[base.index(round[i])], base[base.index(round[i])]) and (base[i], round[i]) not in exclude_case:
                 prev_case.append((base[i], round[i]))
+        exclude_case = []
     return answer
 
 print(solution([["b", "a", "d", "c"],["b", "a", "c", "d"]]))
