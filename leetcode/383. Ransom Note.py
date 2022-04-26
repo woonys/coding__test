@@ -1,5 +1,5 @@
 '''
-Runtime: 113 ms, faster than 22.74% of Python3 online submissions for Ransom Note.
+Runtime: 72 ms, faster than 62.58% of Python3 online submissions for Ransom Note.
 Memory Usage: 14.2 MB, less than 54.42% of Python3 online submissions for Ransom Note.
 1. 시간복잡도: O(m+n) (m: ransomNote의 원소 수 & n: magazine의 원소 수)
 why?
