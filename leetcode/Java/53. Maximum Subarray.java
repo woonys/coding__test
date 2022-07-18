@@ -30,7 +30,7 @@ class Solution {
         시간복잡도: O(n) - 기본적으로는 for문 한 번만 돌기 때문에 O(n)인 건 위와 동일하나 부가적인 로직이 없이 간단함.
         공간복잡도: O(1) - 위의 로직과 달리 dp array를 생성하지 않고 값을 갱신하는 구조.
          */
-        int maxSoFar = nums[0], maxEndingHere=nums[0];
+        int maxSoFar = nums[0], maxEndingHere=nums[0] ;
         for (int i=1; i< nums.length; ++i) { // 전위연산자: 작업 시작 전에 i 값 1 올리고 시작
             maxEndingHere = Math.max(maxEndingHere+nums[i],nums[i]);
             maxSoFar = Math.max(maxSoFar, maxEndingHere);
