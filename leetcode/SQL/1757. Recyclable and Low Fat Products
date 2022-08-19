@@ -1,0 +1,11 @@
+/* 
+1757. Recyclable and Low Fat Products
+https://leetcode.com/problems/recyclable-and-low-fat-products/
+
+Runtime: 564 ms, faster than 61.49% of MySQL online submissions for Recyclable and Low Fat Products.
+Memory Usage: 0B, less than 100.00% of MySQL online submissions for Recyclable and Low Fat Products.
+*/
+
+select product_id 
+from Products
+where low_fats = 'Y' and recyclable = 'Y'
